@@ -1,0 +1,180 @@
+.snk-cd-days-wrapper,.snk-cd-years-wrapper {
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+}
+.dc-date-switch-month,.dc-date-switch-year{
+    cursor: pointer;
+}
+.cd-day-item{
+    position: relative;
+    float: left;
+    font-size: 13px;
+    height: 16.6%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cd-date-week-wrapper {
+    font-size:12px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.cd-days-bottom-wrapper{
+    position: absolute;
+    top:32px;
+    bottom: 0;
+    left:0;
+    right: 0;
+}
+
+.snk-cd-days-section,.snk-cd-years-section{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+
+.cd-date-week-wrapper span {
+    text-align: center;
+    width: 14.2%;
+    position: relative;
+    display: inline-block;
+}
+
+.cd-day-item.premonth .cd-day-span,.cd-day-item.nextmonth .cd-day-span{
+    color:#949292;
+}
+.cd-date-grid-wrapper{
+    position: relative;
+}
+
+
+
+.cd-year-item,.cd-month-item{
+    width: 33%;
+    float: left;
+    text-align: center;
+    position: relative;
+    font-size: 13px;
+    height:25%;
+}
+
+.cd-date-okcancel-bar {
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #eee;
+}
+
+.cd-date-mobile-ok,.cd-date-mobile-cancel,.cd-date-mobile-delete{
+    border: none;
+    outline: none;
+    display: inline-block;
+    font-size: 15px;
+    height:100%;
+    width: 73px;
+    background-color: #fff;
+}
+
+.snk-comment-pop-root {
+    .cd-date-mobile-ok,.cd-date-mobile-cancel,.cd-date-mobile-delete{
+        width: 53px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    .cd-date-okcancel-bar{
+        height: 36px;
+        line-height: 36px;
+    }
+}
+.cd-date-mobile-ok{
+    float: right;
+    color:#1d81ff;
+}
+.cd-date-mobile-cancel,.cd-date-mobile-delete{
+    float: left;
+}
+.cd-date-mobile-delete{
+    color:rgb(211, 77, 77);
+}
+.cd-month-item .cd-month-span,.cd-year-item .cd-year-span {
+    height: 33px;
+    line-height: 33px;
+    width: 70%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 19px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.cd-day-item-selected .cd-day-span,.cd-year-item-selected .cd-year-span,.cd-month-item-selected .cd-month-span{
+    background-color: #1d81ff !important;
+    color: #fff !important;
+}
+
+.snk-comment-pop-root {
+    .cd-month-item:hover .cd-month-span,.cd-year-item:hover .cd-year-span,.cd-day-item:hover .cd-day-span{
+        background-color: #d4e5fc;
+    }
+}
+.cd-date-right-icon:active,.cd-date-left-icon:active{
+    opacity: .4;
+}
+
+.cd-day-span,.cd-year-span{
+    border-radius: 100%;
+    display:inline-block;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.cd-date-switch{
+    font-size: 14px;
+    position: relative;
+    width:100%;
+    height:38px;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    display: table;
+    table-layout: fixed;
+}
+
+.dc-date-switch-item,.dc-date-switch-year,.dc-date-switch-month{
+    display: table-cell;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.dc-date-switch-item{
+    width:11%;
+}
+
+.cd-date-left-icon{
+    display: inline-block;
+    cursor: pointer;
+    width:0;
+    height:0;  
+    border-top: 5px solid transparent;
+    border-right: 6px solid #333;
+    border-bottom: 5px solid transparent;
+}
+
+.cd-date-right-icon {
+    display: inline-block;
+    width: 0;
+    cursor: pointer;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 8px solid #333;
+    border-bottom: 5px solid transparent;
+}
+

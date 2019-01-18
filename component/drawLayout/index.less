@@ -1,0 +1,52 @@
+.snk-comment-drawlayout-bk{
+    position: fixed;
+    z-index: 10000;
+    visibility: hidden;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0,0,0,.7);
+}
+
+.snk-comment-drawlayout-bk-hide {
+    visibility: hidden;
+}
+
+.snk-comment-drawlayout-bk-show {
+    visibility: visible;
+}
+
+.snk-comment-drawlayout-root-top,.snk-comment-drawlayout-root-bottom{
+    position: fixed;
+    z-index: 10001;
+    width:100%;
+}
+
+.snk-comment-drawlayout-root-top{
+    top:0;
+}
+.snk-comment-drawlayout-root-bottom{
+    bottom:0;
+    background-color:#fff;
+}
+
+
+.snk-comment-drawlayout-root-top-show{
+    transform: translate3d(0,0,0);
+}
+
+
+.snk-comment-drawlayout-root-top-hide{
+    visibility: hidden;
+    transform: translate3d(0,-100%,0);
+}
+
+.snk-comment-drawlayout-root-bottom-show{
+    transform: translate3d(0,0,0);
+}
+
+.snk-comment-drawlayout-root-bottom-hide{
+    visibility: hidden;
+    transform: translate3d(0,100%,0);
+}

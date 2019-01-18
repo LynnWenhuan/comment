@@ -1,0 +1,62 @@
+{
+  "name": "snk-comment",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fix-memory-limit": "cross-env LIMIT=8000 increase-memory-limit",
+    "build": "webpack -p --progress --config  webpack.config.js  --env.action=build",
+    "start": "node server.js --env.env=development",
+    "start-uat": "node server.js --env.env=uat",
+    "start-pro": "node server.js --env.env=production",
+    "lint": "eslint --ext .js core --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.40",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0-beta.40",
+    "autoprefixer": "^9.3.1",
+    "babel-eslint": "8.2.3",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-import": "^1.9.1",
+    "babel-plugin-lodash": "^3.3.2",
+    "babel-plugin-react-transform": "^3.0.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "eslint": "4.15.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.5.1",
+    "expose-loader": "^0.7.5",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^0.14.3",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "open-browser-webpack-plugin": "0.0.5",
+    "opn": "^5.4.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "shelljs": "^0.8.3",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "pdfjs-dist": "^2.0.943"
+  }
+}
